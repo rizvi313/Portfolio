@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Required for GitHub Pages
+  // GitHub Pages project repository
   output: 'export',
+  basePath: '/Portfolio',
 
   compiler: {
     styledComponents: true,
