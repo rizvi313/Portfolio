@@ -410,7 +410,7 @@ export default function PreferencesPopup() {
         </ModalHeader>
 
         <ModalBody>
-          <Section>
+          {/* <Section>
             <Label>
               <LabelIcon>🌐</LabelIcon>
               {t('preferences.language')}
@@ -428,7 +428,7 @@ export default function PreferencesPopup() {
                 </LangOption>
               ))}
             </LanguageGrid>
-          </Section>
+          </Section> */}
 
           <Section>
             <Label>
