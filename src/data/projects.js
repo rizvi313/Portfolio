@@ -1,3 +1,6 @@
+const BASE_PATH =
+    process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
+
 export const projects = [
     {
         id: 1,
@@ -10,7 +13,7 @@ export const projects = [
         year: '2025',
         link: 'https://merechauffer-ddc.vercel.app/',
         github: '#',
-        image: '/projects/laecovida.jpg',
+        image: `${BASE_PATH}/projects/laecovida.jpg`,
     },
     {
         id: 2,
@@ -23,7 +26,7 @@ export const projects = [
         year: '2025',
         link: 'https://enrgestion.vercel.app/',
         github: '#',
-        image: '/projects/enrgestion.jpg',
+        image: `${BASE_PATH}/projects/enrgestion.jpg`,
     },
     {
         id: 3,
@@ -36,7 +39,7 @@ export const projects = [
         year: '2025',
         link: 'https://adminmechauffer.vercel.app/',
         github: '#',
-        image: '/projects/admin.jpg',
+        image: `${BASE_PATH}/projects/admin.jpg`,
     },
     {
         id: 4,
@@ -49,6 +52,6 @@ export const projects = [
         year: '2025',
         link: 'https://merechauffer-ddc.vercel.app/boutique',
         github: '#',
-        image: '/projects/boutique.jpg',
+        image: `${BASE_PATH}/projects/boutique.jpg`,
     }
 ];

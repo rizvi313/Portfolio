@@ -235,7 +235,11 @@ export default function About() {
 
     // LOAD EXPERT PHOTO AS PNG
     const textureLoader = new THREE.TextureLoader();
-    const photoTexture = textureLoader.load('/ameer rizvi photo 2.png');
+    const BASE_PATH = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
+
+const photoTexture = textureLoader.load(
+  `${BASE_PATH}/ameer rizvi photo 2.png`
+);
 
     const mats = {
       wood: new THREE.MeshStandardMaterial({ color: 0x5c4033, roughness: 0.8, name: "wood" }),
