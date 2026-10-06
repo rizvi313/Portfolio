@@ -275,7 +275,7 @@ const Testimonials = () => {
     let particles = [];
 
     const img = new Image();
-    img.src = '/logo-fnl-trs-grn.png'; // the file you placed in /public
+    img.src = `${process.env.NODE_ENV === 'production' ? '/Portfolio' : ''}/logo-fnl-trs-grn.png`;
     img.onload = () => {
       const svgW = img.naturalWidth;
       const svgH = img.naturalHeight;

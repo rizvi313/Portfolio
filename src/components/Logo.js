@@ -24,7 +24,7 @@ export default function Logo({ width, className }) {
   return (
     <LogoWrapper className={className} $width={width} $isDark={isDark}>
       <Image
-        src="/logo-fnl-trs-grn.png"
+  src={`${process.env.NODE_ENV === 'production' ? '/Portfolio' : ''}/logo-fnl-trs-grn.png`}
         alt="SAR Logo"
         width={200}
         height={130}

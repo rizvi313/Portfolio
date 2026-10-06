@@ -210,7 +210,7 @@ export default function Preloader() {
 
           <g className="animated-content">
             <image
-  href="/logo-fnl-trs-grn.png"
+  href={`${process.env.NODE_ENV === 'production' ? '/Portfolio' : ''}/logo-fnl-trs-grn.png`}
   x="385"
   y="400"
   width="350"

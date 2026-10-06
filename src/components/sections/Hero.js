@@ -25,10 +25,14 @@ const ACTION_FPS = 10;
 const HOVER_FPS = 24; // Match video frame rate for smooth playback
 const HOVER_LOOP_FPS = 10; // Slower for the idle-like loop pose
 const LOOP_PAUSE_MS = 2000;
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 const buildFramePaths = (folder, count) =>
-  Array.from({ length: count }, (_, i) => `/avatar/${folder}/frame_${String(i + 1).padStart(3, '0')}.webp`);
-
+  Array.from(
+    { length: count },
+    (_, i) =>
+      `${BASE_PATH}/avatar/${folder}/frame_${String(i + 1).padStart(3, '0')}.webp`
+  );
 
 /* ══════════════════════════════════════════
    ANIMATIONS
